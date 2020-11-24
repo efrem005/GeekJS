@@ -20,10 +20,12 @@ document.querySelector(".temp").addEventListener("click", function temp() {
 document.querySelector(".name").addEventListener("click", function name() {
   const name = prompt("Введите имя: ");
   const admin = name;
-  if (admin != null && regular.test(admin)) {
+  if (admin != null && regular.test(admin) && admin != "") {
     alert(admin);
   } else if (admin == null) {
     alert("Возвращайтесь мы вас ждем");
+  } else if (admin == "") {
+    alert("Вы не чего не ввели");
   } else {
     alert("Вы ввели число");
   }
