@@ -94,6 +94,7 @@ function SwitchCase(a) {
 }
 
 //
+//
 function degree() {
   alert(step);
   let val = +prompt("Введите основание степенной функции");
