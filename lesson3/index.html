@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://kit.fontawesome.com/861689887d.js"></script>
+    <title>JS Урок №3</title>
+  </head>
+  <style>
+    .box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .box select {
+      width: 250px;
+      padding: 10px;
+      height: 50px;
+      border: none;
+      background: #ab05af;
+      font-family: "Russo One", sans-serif;
+      color: #fff;
+      font-size: 20px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+      outline: none;
+    }
+
+    .box::before {
+      content: "\f0c8";
+      font-family: "Font Awesome 5 Free";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      color: #fff;
+      font-size: 28px;
+      background: #da00e0;
+      pointer-events: none;
+    }
+
+    .box select option {
+      position: relative;
+    }
+
+    .box select option:hover {
+      background: #da00e0;
+    }
+
+    .box:hover::before {
+      background: #9b03a0;
+    }
+
+    .box select option::before {
+      content: "\f0c8";
+      font-family: "Font Awesome 5 Free";
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  </style>
+  <body>
+    <header>
+      <a href="../index.html"
+        ><img class="logo" src="../img/logo.png" alt="logo"
+      /></a>
+    </header>
+    <main>
+      <div class="page">
+        <h1>Урок 3</h1>
+        <div class="block">
+          <button class="btn whileNum">простые числа</button>
+          <button class="btn forNum">for</button>
+          <button class="btn pyramid">Пирамида</button>
+          <button class="btn basket">Корзина</button>
+        </div>
+        <p class="text">Проверок на ошибочный ввод неделал</p>
+      </div>
+    </main>
+    <footer>
+      <p>copy @ 2020</p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
