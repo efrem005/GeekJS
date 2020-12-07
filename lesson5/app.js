@@ -40,7 +40,6 @@ const text = document.querySelector('.text')
 let cont = 1
 
 function Chess() {
-
       text.innerHTML = ""
       const textChess = document.createElement('p')
       textChess.classList.add('textChess')
