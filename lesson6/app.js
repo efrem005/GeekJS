@@ -206,7 +206,6 @@ if(localStorage.getItem('lesson6') != undefined){
 const cartIn = document.querySelector('#cart')
 
 document.onscroll = () =>{
-  console.log(window.pageYOffset)
   if(window.pageYOffset > 367){
     cartIn.style.position = 'sticky'
   }else if(window.pageYOffset < 376) {
