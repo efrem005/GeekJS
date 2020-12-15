@@ -91,7 +91,7 @@ class Good {
     imgEl.addEventListener("click", () => listener.img(this.id));
 
     const headerEl = document.createElement("h2");
-    headerEl.classList.add("itemh2");
+    headerEl.classList.add("itemH2");
     headerEl.textContent = this.name;
 
     const priceEl = document.createElement("p");
@@ -154,8 +154,8 @@ class Goods {
 }
 
 class Cart {
-  constructor() {
-    this._store = [];
+  constructor(state = []) {
+    this._store = state;
     this.cartEl = document.querySelector("#cart");
     this.idManager = new IdManager();
     this.render();
@@ -163,7 +163,12 @@ class Cart {
 
   add(good) {
     this._store.push({id: this.idManager.getIdPlus(), ...good});
+    this.localSave()
     this.render();
+  }
+
+  localSave(){
+    localStorage.setItem('state', JSON.stringify(this._store))
   }
 
   delete(id) {
@@ -189,7 +194,22 @@ class Cart {
   }
 }
 
+
 new Goods(object.map((el) => new Good(el.id, el.title, el.price, el.img)));
 
+if(localStorage.getItem('state') != undefined){
+  const localLode = JSON.parse(localStorage.getItem('state'))
+  new Cart(localLode)
+}
 
 
+const cartIn = document.querySelector('#cart')
+
+document.onscroll = () =>{
+  console.log(window.pageYOffset)
+  if(window.pageYOffset > 367){
+    cartIn.style.position = 'sticky'
+  }else if(window.pageYOffset < 376) {
+    cartIn.style.position = 'inherit'
+  }
+}

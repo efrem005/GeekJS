@@ -19,3 +19,5 @@
 #### Ссылка на [Урок №5](https://efrem005.github.io/GeekJS/lesson5/index.html)
 
 #### Ссылка на [Урок №6](https://efrem005.github.io/GeekJS/lesson6/index.html)
+
+#### Ссылка на [Урок №7](https://efrem005.github.io/GeekJS/lesson7/index.html)
