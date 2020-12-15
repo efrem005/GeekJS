@@ -488,7 +488,7 @@ template {
 .price {
   font-size: 30px; }
 
-.itemh2 {
+.itemH2 {
   font-size: 20px; }
 
 .alert {
@@ -501,6 +501,125 @@ template {
   width: 100vw;
   height: 100vh;
   background-color: rgba(3, 3, 3, 0.8); }
+
+#cart {
+  background-color: rgba(204, 204, 204, 0.8);
+  top: 0; }
+
+.lessonSeven {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+
+.lessonPrice {
+  font-size: 23px;
+  padding-top: 20px; }
+
+.sector {
+  display: none; }
+
+.lessonPriceDiv {
+  position: relative; }
+
+.priceDiv {
+  position: absolute;
+  top: 0;
+  right: -8px;
+  font-size: 14px;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(170, 88, 0, 0.8);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.cartBody {
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+  background-color: rgba(170, 88, 0, 0.8);
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; }
+  .cartBody_Price {
+    font-weight: bold;
+    color: white; }
+
+.body_block {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.catalog_items {
+  width: 210px;
+  margin-bottom: 30px; }
+.catalog_img {
+  width: inherit;
+  object-fit: cover; }
+.catalog_title {
+  padding-left: 5px;
+  margin: 0;
+  font-size: 1.3rem; }
+.catalog_price {
+  padding-left: 5px;
+  font-size: 25px; }
+  .catalog_price::after {
+    content: "$";
+    font-size: 12px;
+    color: red;
+    font-weight: bold;
+    margin-left: 5px; }
+
+.cart_items {
+  display: flex;
+  width: inherit;
+  height: 50px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 0; }
+  .cart_items:last-child {
+    border-bottom: 1px solid black; }
+.cart_img {
+  height: inherit;
+  border-radius: 25px; }
+.cart_title {
+  font-size: 20px; }
+.cart_price {
+  font-size: 20px; }
+  .cart_price::after {
+    content: "$";
+    font-size: 12px;
+    color: red;
+    font-weight: bold;
+    margin-left: 5px; }
+.cart_btn {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.delivery_cart {
+  text-align: center;
+  width: 440px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+.delivery_address {
+  display: block; }
+.delivery_btn {
+  margin-top: 20px; }
 
 body {
   position: relative;
