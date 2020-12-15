@@ -159,6 +159,7 @@ class Cart {
     this.cartEl = document.querySelector("#cart");
     this.idManager = new IdManager();
     this.render();
+    debugger
   }
 
   add(good) {
@@ -168,7 +169,7 @@ class Cart {
   }
 
   localSave(){
-    localStorage.setItem('state', JSON.stringify(this._store))
+    localStorage.setItem('lesson6', JSON.stringify(this._store))
   }
 
   delete(id) {
@@ -197,8 +198,8 @@ class Cart {
 
 new Goods(object.map((el) => new Good(el.id, el.title, el.price, el.img)));
 
-if(localStorage.getItem('state') != undefined){
-  const localLode = JSON.parse(localStorage.getItem('state'))
+if(localStorage.getItem('lesson6') != undefined){
+  const localLode = JSON.parse(localStorage.getItem('lesson6'))
   new Cart(localLode)
 }
 
