@@ -159,7 +159,6 @@ class Cart {
     this.cartEl = document.querySelector("#cart");
     this.idManager = new IdManager();
     this.render();
-    debugger
   }
 
   add(good) {
