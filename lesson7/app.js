@@ -57,7 +57,7 @@ const object = [
 let id = 0
 let priceIn = []
 
-if(localStorage.getItem('state') !== undefined)
+if(localStorage.getItem('state') != undefined)
   priceIn = JSON.parse(localStorage.getItem('state'))
 
 function cartId() {
